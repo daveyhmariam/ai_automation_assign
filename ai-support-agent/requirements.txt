@@ -1,0 +1,8 @@
+firebase-functions
+google-generativeai
+mailersend
+google-api-python-client
+requests
+firebase-functions
+mailersend
+google-api-python-client

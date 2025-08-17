@@ -1,0 +1,42 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "runtime": "python312",
+      "predeploy": [
+        "pip install -r functions/requirements.txt"
+      ],
+      "ignore": [
+        "venv",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "functions": [
+        {
+          "name": "email_processor",
+          "entryPoint": "functions.email_processor.main.email_processor",
+          "httpsTrigger": {}
+        },
+        {
+          "name": "follow_up_agent",
+          "entryPoint": "functions.follow_up_agent.main.follow_up_agent",
+          "schedule": "0 9 * * *"
+        }
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

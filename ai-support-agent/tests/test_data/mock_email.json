@@ -1,0 +1,5 @@
+{
+  "subject": "intermittent 503 Service Unavailable error",
+  "html": "<p>I'm experiencing intermittent 503 Service Unavailable errors when accessing my Firebase-hosted application, but only when making API calls to my Cloud Functions from a specific geographic region. How can I diagnose and resolve this issue?!</p>",
+  "from": {"email": "daveyhmariam1@gmail.com"}
+}

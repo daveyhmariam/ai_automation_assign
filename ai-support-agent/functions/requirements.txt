@@ -1,0 +1,7 @@
+firebase-functions
+firebase-admin
+google-api-python-client
+google-auth
+mailersend
+google-generativeai
+python-dotenv
